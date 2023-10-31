@@ -31,7 +31,7 @@ nav {
 main {
     height: 85%;
     width: 100%;
-    background-image: url(../Assets/Desktop-Background.jpg);
+    background-image: url(./assets/desktop_background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -243,7 +243,7 @@ img {
     main {
         height: 85%;
         width: 100%;
-        background-image: url(./Assets/Phone-Background.jpg);
+        background-image: url(./assets/phone_background.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }

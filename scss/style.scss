@@ -1,11 +1,11 @@
+// Definición de variables de color
 $font-family-1: 'Nunito', sans-serif;
 $font-family-2: 'Roboto', sans-serif;
 $background-color-body: #111;
-$background-color-header: rgb(0, 0, 0);
-$url-background-main: "./assets/desktop_background.jpg";
-$background-color-form: rgb(204, 204, 204);
+$background-color-header: rgba(0, 0, 0, 0.8); // Agregamos transparencia al header
+$background-color-form: rgba(204, 204, 204, 0.8); // Agregamos transparencia al formulario
 $color-letter-white: aliceblue;
-$background-color-boton: #f2f2f2;
+$background-color-boton: rgba(242, 242, 242, 0.5); // Agregamos transparencia al botón
 $background-color-boton2: #007BFF;
 $color-boton2: white;
 $background-color-hover-boton2: #0c2a4a;
@@ -15,8 +15,8 @@ $background-color-grid-body: #f8f9fa;
 $color-grid-h1: #007bff;
 $background-color-grid-p: #6c757d;
 $color-white: white;
-$url-background-main-media: "./assets/phone_background.jpg";
 
+// Estilos globales
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +25,7 @@ $url-background-main-media: "./assets/phone_background.jpg";
     font-family: $font-family-2;
 }
 
+// Estilos del cuerpo
 body {
     margin: 0;
     padding: 1%;
@@ -33,30 +34,36 @@ body {
     background-color: $background-color-body;
 }
 
+// Estilos del encabezado
 header {
     height: 10%;
     width: 100%;
     background-color: $background-color-header;
     display: flex;
     flex-direction: row;
+    justify-content: space-between; // Agregamos espacio entre los elementos
+    padding: 20px; // Agregamos padding
 }
 
 nav {
     flex-grow: 1;
 }
 
+// Estilos del contenido principal
 main {
     height: 85%;
     width: 100%;
-    background-image: url($url-background-main);
+    background-image: url("../assets/desktop_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 20px; // Agregamos padding
 }
 
+// Estilos del formulario
 .form {
     background-color: $background-color-form;
     width: 70%;
-    height: 70%;
+    height: 90%;
     border-radius: 7%;
     display: flex;
     justify-content: space-around;
@@ -64,6 +71,7 @@ main {
     flex-direction: column;
     text-align: center;
     margin: auto;
+    padding: 20px; // Agregamos padding
 }
 
 .links {
@@ -85,6 +93,7 @@ footer {
     height: 5%;
     width: 100%;
     background-color: $background-color-form;
+    padding: 20px; // Agregamos padding
 }
 
 .letter-white {
@@ -94,12 +103,13 @@ footer {
 
 .boton {
     font-weight: bold;
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
     background-color: $background-color-boton;
     border-radius: 40px;
     padding: 10px;
     width: 100%;
+    transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
 }
 
 .center{
@@ -116,7 +126,7 @@ footer {
 
 .boton2 {
     font-weight: bold;
-    font-size: 300%;
+    font-size: 200%;
     text-align: center;
     background-color: $background-color-boton2;
     color: $color-boton2;
@@ -126,15 +136,18 @@ footer {
     height: 30%;
     margin: 10px;
     background-color: $background-color-boton2;
+    transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
 
     &:hover {
         background-color: $background-color-hover-boton2;
+        transform: scale(1.1); // Agregamos una escala al botón para que se agrande al pasar el mouse
     }
 }
 
+
 .center-boton {
     font-weight: bold;
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
     background-color: $background-color-boton;
     border-radius: 40px;
@@ -142,6 +155,7 @@ footer {
     width: 30%;
     height: 30%;
     margin: auto;
+    transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
 }
 
 .botton-column {
@@ -206,6 +220,8 @@ img {
 
     li {
         float: left;
+        list-style-type: none;
+        margin-right: 10px;
 
         a {
             display: block;
@@ -213,6 +229,7 @@ img {
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
+            transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
 
             &:hover {
                 background-color: $background-color-hover-menu;
@@ -227,34 +244,21 @@ img {
 
 .adoptar{
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin-top: 10%;
 }
 
-.grid-body {
-    background-color: $background-color-grid-body;
-}
 
-.grid-h1 {
-    color: $color-grid-h1;
-}
-
-.gird-p {
-    text-align: center;
-    padding: 20px;
-    background-color: $background-color-grid-p;
-    color: $color-white;
-    border-radius: 5px;
-    margin: 5px;
-}
-
-@media screen and (max-width: 600px) {
-    main {
-        height: 85%;
-        width: 100%;
-        background-image: url($url-background-main-media);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+// Estilos para los títulos del formulario
+.propiedades {
+    font-size: 2em; // Aumentamos el tamaño de la fuente
+    font-weight: bold; // Hacemos la fuente en negrita
+    color: $color-letter-white; // Cambiamos el color de la fuente
+    margin-bottom: 10px; // Agregamos un margen inferior para separar el título de las opciones
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // Agregamos una sombra al texto para que resalte más
+    background: linear-gradient(to right, #007BFF, #00FF00); // Agregamos un gradiente de color al fondo del texto
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

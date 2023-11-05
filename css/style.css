@@ -233,4 +233,14 @@ img {
   -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 600px) {
+  main {
+    height: 85%;
+    width: 100%;
+    background-image: url("../assets/phone_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

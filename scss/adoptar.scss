@@ -1,0 +1,25 @@
+.title-adoptar {
+    margin-top: 5%;
+}
+
+.adoptar {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0.625rem;
+    margin-top: 10%;
+}
+
+.form {
+    background-color: $background-color-form;
+    width: 70%;
+    height: 90%;
+    border-radius: 0.4375rem;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    padding: 1.25rem; // Agregamos padding
+}

@@ -1,0 +1,38 @@
+// Definición de variables de color
+$font-family-1: 'Nunito', sans-serif;
+$background-color-body: white;
+$background-color-header: #DC851F;
+$background-color-form: rgba(204, 204, 204, 0.8); // Agregamos transparencia al formulario
+$color-letter-white: rgb(0, 0, 0);
+$background-color-boton: #DC851F; // Agregamos transparencia al botón
+$background-color-boton2: #DC851F;
+$color-boton2: white;
+$background-color-hover-boton2: #0c2a4a;
+$background-color-menu: #DC851F;
+$background-color-hover-menu: #111;
+$background-color-grid-body: #f8f9fa;
+$color-grid-h1: #007bff;
+$background-color-grid-p: #6c757d;
+$color-white: white;
+
+// Estilos globales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family-1;
+}
+
+// Estilos del cuerpo
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: $background-color-body;
+}
+
+main {
+    height: 85%;
+    width: 100%;
+}

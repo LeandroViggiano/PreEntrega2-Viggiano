@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.card-img-top{
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.625rem;
+    border-radius: 0.625rem;
+    background-color: rgb(194, 225, 252);
+    margin-bottom: 0.625rem;
+    padding: 0;
+}

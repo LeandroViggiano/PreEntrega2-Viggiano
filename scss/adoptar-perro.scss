@@ -1,0 +1,30 @@
+// Estilos para los títulos del formulario
+.propiedades {
+    font-size: 2em; // Aumentamos el tamaño de la fuente
+    font-weight: bold; // Hacemos la fuente en negrita
+    color: $color-letter-white; // Cambiamos el color de la fuente
+    margin-bottom: 0.625rem; // Agregamos un margen inferior para separar el título de las opciones
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); // Agregamos una sombra al texto para que resalte más
+    background: linear-gradient(to right, #007BFF, #00FF00); // Agregamos un gradiente de color al fondo del texto
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.multiple-option {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.center2 {
+    justify-content: center;
+    padding-bottom: 3%;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

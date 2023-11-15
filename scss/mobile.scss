@@ -1,0 +1,68 @@
+@media (min-width: 37.51rem) {
+    #menu {
+        width: 100%;
+        position: relative;
+        left: 0;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 37.5rem) {
+
+    main {
+        height: 94%;
+        width: 100%;
+        background-image: url("../assets/phone_background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    header{
+        height: 6%;
+    }
+    .bottons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80vh;
+    }
+
+    .center-boton {
+        width: fit-content;
+
+        img {
+            display: none;
+        }
+    }
+
+
+   .ocultar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+
+        li {
+            a {
+                text-align: left;
+                padding: 0.625rem;
+            }
+        }
+    }
+
+    #menu-btn:checked~#menu {
+        left: 0;
+    }
+    .switch{
+        display: none;
+    }
+
+}

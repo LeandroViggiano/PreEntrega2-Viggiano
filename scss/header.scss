@@ -1,0 +1,72 @@
+
+// Estilos del encabezado
+header {
+    width: 100%;
+    background-color: $background-color-header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; // Agregamos espacio entre los elementos
+}
+
+
+.paw {
+    height: 1.3125rem;
+    /* Ajusta este valor según tus necesidades */
+    width: auto;
+    /* Esto mantendrá las proporciones de la imagen */
+
+}
+
+#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: $background-color-menu;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: -100%;
+    width: 75%; // Puedes ajustar esto a lo ancho que quieras que sea el menú
+    height: calc(90%);
+    transition: left 0.3s ease-out;
+
+    li {
+        float: left;
+        list-style-type: none;
+        margin-right: 0.625rem;
+
+        a {
+
+            text-decoration: none;
+            display: block;
+            color: $color-white;
+            text-align: center;
+            padding: 0.875rem 1rem;
+            transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
+
+            &:hover {
+                background-color: $background-color-hover-menu;
+            }
+        }
+    }
+}
+
+nav {
+    flex-grow: 1;
+}
+
+#menu-btn {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.875rem;
+    background: none;
+    border: none;
+    color: $color-white; // O el color que prefieras
+}
+
+

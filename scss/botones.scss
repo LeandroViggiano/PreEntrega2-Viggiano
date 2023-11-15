@@ -1,0 +1,46 @@
+.boton {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-white;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    background-color: $background-color-boton;
+    border-radius: 2.5rem;
+    padding: 0.625rem;
+    width: 100%;
+    transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
+}
+
+.boton2 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 200%;
+    text-align: center;
+    background-color: $background-color-boton2;
+    color: $color-boton2;
+    border-radius: 2.5rem;
+    padding: 0.625rem;
+    width: 30%;
+    height: 30%;
+    margin: 0.625rem;
+    background-color: $background-color-boton2;
+    transition: all 0.3s ease; // Agregamos transición para un efecto suave al pasar el mouse
+
+    &:hover {
+        background-color: $background-color-hover-boton2;
+        transform: scale(1.1); // Agregamos una escala al botón para que se agrande al pasar el mouse
+    }
+}
+
+
+.links {
+    height: 30%;
+}
+
+
+
+input {
+    width: 50%;
+    margin-top: 5%;
+}

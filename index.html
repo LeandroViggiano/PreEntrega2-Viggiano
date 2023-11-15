@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Descripción" content="Todo tipo de ayuda para animales">
-    <meta name="keywords" content="HTML, CSS, JS, SASS, animal, ayuda, mascota">
+    <meta name="Description" content="Todo tipo de ayuda para animales">
+    <meta name="keywords" content="Animal, ayuda, mascota, adopciones, perros, gatos">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -16,47 +17,66 @@
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="menu-btn">
+            <label for="menu-btn" class="hamburger">☰</label>
             <ul id="menu">
-                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html"><img src="../assets/paw_icon.png"
+                            alt="logo de pata y acceso al inicio de la página" class="paw"></a></a></li>
+                <li><a href="./webpages/adoptar.html">Adoptar</a></li>
+                <li><a href="">Dar en adopción</a></li>
+                <li><a href="">Pedir ayuda</a></li>
+                <li><a href="">Ayudar</a></li>
                 <li><a href="./webpages/register.html">Registrarse</a></li>
                 <li><a href="./webpages/log-in.html">Iniciar sesión</a></li>
+                <!-- Agrega un botón de alternancia para cambiar entre el modo claro y oscuro -->
+                <li>
+                    <label class="switch">
+                        <input type="checkbox" id="theme-switch">
+                        <span class="slider round"></span>
+                        <span id="mode"></span>
+                    </label>
+                </li>
             </ul>
         </nav>
-
     </header>
+    
     <main>
+
         <div class="titles">
-            <div>
-                <h2 class="letter-white">¡Encuentra a tu mejor amigo!</h2>
-                <p class="letter-white">Adoptar a un animal no cambiará al mundo, pero sí cambiará su mundo</p>
+            <div class="ocultar">
+                <div>
+                    <h2 class="letter-black">¡Encuentra a tu mejor amigo!</h2>
+                    <p class="letter-black">Adoptar a un animal no cambiará al mundo, pero sí cambiará su mundo</p>
+                </div>
+                <div>
+                    <h2 class="letter-black">Avisa si necesitas ayuda</h2>
+                    <p class="letter-black">Siempre existe alguien dispuesto a extender su mano y ofrecer ayuda, sin
+                        importar a
+                        quién sea dirigida ni
+                        cuán
+                        pequeña pueda parecer esa ayuda.</p>
+                </div>
             </div>
-            <div>
-                <h2 class="letter-white">Avisa si necesitas ayuda</h2>
-                <p class="letter-white">Siempre existe alguien dispuesto a extender su mano y ofrecer ayuda, sin
-                    importar a
-                    quién sea dirigida ni
-                    cuán
-                    pequeña pueda parecer esa ayuda.</p>
+            <div class="bottons">
+                <div class="center-boton">
+                    <img src="./assets/desktop_background.jpg" alt="Perro feliz adoptado">
+                    <a href="./webpages/adoptar.html" class="delete">Adoptar</a>
+                </div>
+                <div class="center-boton">
+                    <img src="./assets/dar_en_adopcion.jpg" alt="Gato mirando por ventana">
+                    <a href="">Dar en adopción</a>
+                </div>
+                <div class="center-boton">
+                    <img src="./assets/pedir_ayuda.jpg" alt="Perro en búsqueda de comida">
+                    <a href="">Pedir ayuda</a>
+                </div>
+                <div class="center-boton">
+                    <img src="./assets/dar_ayuda.jpg" alt="Perro con logo de empresa que prporciona primeros auxilios">
+                    <a href="" >Ayudar</a>
+                </div>
             </div>
-        </div>
-        <div class="bottons">
-            <div class="botton-column">
-                <a href="./webpages/adoptar.html" class="boton">Adoptar</a>
-                <a href="" class="boton">Comprar</a>
-            </div>
-            <a href="" class="center-boton">Dar en adopción</a>
-            <div class="botton-column">
-                <a href="" class="boton">Pedir ayuda</a>
-                <a href="" class="boton">Ayudar</a>
-            </div>
-        </div>
-
-
-    </div>
     </main>
-    <footer>
-        <p>Powered by Leandro Viggiano</p>
-    </footer>
+    <script src="./scripts/js.js"></script>
 </body>
 
 </html>

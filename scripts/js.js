@@ -1,4 +1,33 @@
-// Obtén el elemento del interruptor
+function verificarEdad() {
+  let edadUsuario;
+
+  do {
+      edadUsuario = prompt("Por favor, ingresa tu edad");
+      if(edadUsuario < 0 || edadUsuario > 95) {
+          alert("Edad no válida. Por favor, ingresa una edad entre 0 y 95.");
+      } else if(edadUsuario >= 0 && edadUsuario <= 25) {
+          alert("No tiene la edad necesaria para cuidar a un animal");
+      }
+  } while(edadUsuario < 0 || edadUsuario > 95);
+
+  if(edadUsuario > 25 && edadUsuario <= 95) {
+      verificarSueldo();
+  }
+}
+
+function verificarSueldo() {
+  let sueldoUsuario = prompt("Por favor, ingresa tu sueldo en dólares");
+  if(sueldoUsuario > 250) {
+      alert("Usted se encuentra en condiciones de adoptar un animal");
+  } else {
+      alert("No puede adoptar un animal");
+  }
+}
+
+verificarEdad();
+
+// --------------------------------
+//Script para el modo oscuro
 var themeSwitch = document.getElementById('theme-switch');
 
 // Comprueba si el modo oscuro está activado en la configuración local
@@ -19,3 +48,4 @@ themeSwitch.addEventListener('change', function(event) {
     localStorage.setItem('darkMode', 'false');
   }
 });
+//-----------------------------Fin del script para el modo oscuro

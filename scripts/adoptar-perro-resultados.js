@@ -7,7 +7,7 @@ function Card(image, name, location, description) {
 
 let cards = [
     new Card("../assets/toby.jpeg", "Toby", "Mendoza-Capital", "Toby es un perro al que le gusta jugar, jugar y jugar y escribir mucho texto para llenar el recuadro porque sí"),
-    // ... puedes agregar más tarjetas aquí ...
+    
 ];
 
 let newCard = new Card("../assets/toby.jpeg", "Nombre del nuevo perro", "Nueva ubicación", "Descripción del nuevo perro");

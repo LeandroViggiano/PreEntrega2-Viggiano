@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Iniciar Sesión</title>
+    <title>Iniciar sesión</title>
 </head>
 
 <body>
     <header>
         <nav>
             <input type="checkbox" id="menu-btn">
-            <label for="menu-btn" class="hamburger">&#9776;</label>
+            <label for="menu-btn" class="hamburger">☰</label>
             <ul id="menu">
                 <li><a href="../index.html"><img src="../assets/paw_icon.png"
                             alt="logo de pata y acceso al inicio de la página" class="paw"></a></a></li>
@@ -35,14 +35,17 @@
                 <input type="text" class="input" placeholder="Introduce tu mail">
                 <input type="password" class="input" placeholder="Introduce tu contraseña">
                 <input type="submit" value="Registrarse" class="input">
+                <input type="button" onclick="signInWithFacebook()" value="Iniciar sesión con Facebook" class="input">
+                <input type="button" onclick="signInWithGoogle()" value="Iniciar sesión con Google" class="input">
             </form>
             <div class="links"></div>
             <a href="">Olvidaste tu contraseña</a>
-            <p>¿No tienes una cuenta?</p>
-            <a href="./register.html">Registrate</a>
+            <p>¿Ya tienes una cuenta?</p>
+            <a href="./log-in.html">Iniciar Sesión</a>
         </div>
     </main>
 
+    <script src="../scripts/log-in.js"></script>
 </body>
 
 </html>

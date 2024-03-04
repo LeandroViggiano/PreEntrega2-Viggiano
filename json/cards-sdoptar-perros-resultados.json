@@ -1,0 +1,20 @@
+[
+    {
+        "image": "../assets/toby.jpeg",
+        "name": "Toby",
+        "location": "Mendoza-Capital",
+        "description": "Toby es un perro al que le gusta jugar, jugar y jugar y escribir mucho texto para llenar el recuadro porque sí"
+    },
+    {
+        "image": "../assets/toby.jpeg",
+        "name": "Nombre del nuevo perro",
+        "location": "Nueva ubicación",
+        "description": "Descripción del nuevo perro"
+    },
+    {
+        "image": "../assets/toby.jpeg",
+        "name": "Nombre del nuevo perro",
+        "location": "Nueva ubicación",
+        "description": "Descripción del nuevo perro"
+    }
+]

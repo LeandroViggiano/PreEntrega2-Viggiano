@@ -44,15 +44,16 @@ var MiBiblioteca = (function() {
     };
 })();
 
-let cards = [
-    MiBiblioteca.createCard("../assets/toby.jpeg", "Toby", "Mendoza-Capital", "Toby es un perro al que le gusta jugar, jugar y jugar y escribir mucho texto para llenar el recuadro porque sí"),
-    MiBiblioteca.createCard("../assets/toby.jpeg", "Nombre del nuevo perro", "Nueva ubicación", "Descripción del nuevo perro")
-];
-
 window.onload = function() {
     let container = document.querySelector('main div');
 
-    for (let card of cards) {
-        MiBiblioteca.addCardToContainer(container, card);
-    }
+    fetch('../json/cards-sdoptar-perros-resultados.json')
+        .then(response => response.json())
+        .then(cards => {
+            for (let cardData of cards) {
+                let card = MiBiblioteca.createCard(cardData.image, cardData.name, cardData.location, cardData.description);
+                MiBiblioteca.addCardToContainer(container, card);
+            }
+        })
+        .catch(error => console.error('Error:', error));
 };
